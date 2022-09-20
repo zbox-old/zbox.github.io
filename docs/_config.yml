@@ -36,4 +36,5 @@ titles_from_headings:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-titles-from-headings
   - jemoji

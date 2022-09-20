@@ -9,9 +9,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 
   .markdown-body {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif', 'Times New Roman', 'Times', serif;
+    font-size: 1.25rem;
 
     @for $i from 1 through 6 {
       h#{$i} {

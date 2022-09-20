@@ -1,0 +1,34 @@
+title: "zBox Development Platform"
+description: "The z17 Development organization global storage."
+image: ""
+lang: "ru_RU"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: ""
+
+author:
+  name: "z17 Development"
+  email: "mail@z17.dev"
+  github: "z17dev"
+  twitter: "z17dev"
+
+twitter:
+  username: "z17dev"
+  card: summary
+
+social:
+  name: "z17dev"
+  links:
+    - https://github.com/z17dev
+
+webmaster_verifications:
+  google: ""
+  yandex: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji

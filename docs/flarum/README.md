@@ -7,7 +7,7 @@
   {% assign name = i.name | remove: dir | remove_first: '-' %}
   <span class="block">[{{ name }}]({{ name }})</span>
   <span class="block">{{ i.description }}</span>
-  <span class="block"><small>
+  <span class="block text-gray"><small>
     [<i class="fa-brands fa-github fa-fw"></i>]({{ i.html_url }})
     [<i class="fa-solid fa-link fa-fw"></i>]({{ i.homepage }})
     <i class="fa-solid fa-copyright fa-fw"></i> `{{ i.license.spdx_id }}`

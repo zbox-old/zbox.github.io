@@ -4,5 +4,5 @@
 {% for i in bash %}
   {% assign name = i.name | remove: "bash-" %}
   * [{{ name }}]({{ name | remove: "bash-" }}/)  
-  [GitHub]({{ i.html_url }})
+  <small>[GitHub]({{ i.html_url }})</small>
 {% endfor %}

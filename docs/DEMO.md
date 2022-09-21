@@ -30,9 +30,8 @@ console.log(animals);
 ```
 
 ## Repositories
-{% assign xenforo = site.github.public_repositories | where_exp: "item", "item.name contains 'xenforo-'" %}
 
-{% for repository in xenforo %}
-  {{ repository.name }}
-  * [{{ repository.name }}]({{ repository.html_url }})
+{% assign bash = site.github.public_repositories | where_exp: "i", "i.name contains 'bash-'" %}
+{% for i in bash %}
+  * [{{ i.name }}]({{ i.html_url }})
 {% endfor %}

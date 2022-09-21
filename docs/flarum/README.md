@@ -1,10 +1,10 @@
 # Flarum
 
-{% assign dir = "flarum-l10n" | remove: "/" %}
+{% assign dir = page.dir | remove: '/' %}
 
-{% assign group = site.github.public_repositories | where: "topics", dir %}
+{% assign group = site.github.public_repositories | where: 'topics', dir %}
 {% for i in group %}
-  {% assign name = i.name | remove: dir %}
+  {% assign name = i.name | remove: dir | remove: '-' %}
   <span class="block">[{{ name }}]({{ name }})</span>
   <span class="block">{{ i.description }}</span>
   <span class="block">

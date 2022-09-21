@@ -1,6 +1,6 @@
 # Flarum
 
-{% assign dir = page.dir %}
+{% assign dir = page.dir | remove: "/" %}
 {{ dir }}
 
 {% assign group = site.github.public_repositories | where_exp: "i", "i.name contains 'flarum-'" %}

@@ -1,6 +1,6 @@
 # Flarum
 
-{% assign dir = page.dir | remove: "/" %}
+{% assign dir = "flarum-l10n" | remove: "/" %}
 
 {% assign group = site.github.public_repositories | where: "topics", dir %}
 {% for i in group %}

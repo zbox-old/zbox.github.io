@@ -28,3 +28,9 @@ animals.push('chickens', 'cats', 'dogs');
 console.log(animals);
 // expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
 ```
+
+## Repositories
+
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}

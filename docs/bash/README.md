@@ -3,6 +3,6 @@
 {% assign bash = site.github.public_repositories | where_exp: "i", "i.name contains 'bash-'" %}
 {% for i in bash %}
   {% assign name = i.name | remove: "bash-" %}
-  [{{ name }}]({{ i.html_url }})
-  {{ i.description }}
+  <span class="block">[{{ name }}]({{ i.html_url }})</span>
+  <span class="block">{{ i.description }}</span>
 {% endfor %}

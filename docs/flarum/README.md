@@ -8,7 +8,7 @@
   <span class="block">
     [{{ name }}]({{ name }})
     [<i class="fa-brands fa-github fa-fw"></i>]({{ i.html_url }})
-    [<i class="fa-solid fa-link"></i>]({{ i.homepage }})
+    [<i class="fa-solid fa-link fa-fw"></i>]({{ i.homepage }})
   </span>
   <span class="block">{{ i.description }}</span>
 {% endfor %}

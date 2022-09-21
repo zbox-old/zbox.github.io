@@ -4,5 +4,6 @@
 {% for i in bash %}
   {% assign name = i.name | remove: "bash-" %}
   <span class="block">[{{ name }}]({{ i.html_url }})</span>
-  <span class="block">{{ i.description }}</span>
+  <span class="block"><small>{{ i.description }}</small></span>
+  <span class="block">[README]({{ name }})</span>
 {% endfor %}

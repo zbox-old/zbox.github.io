@@ -1,6 +1,6 @@
 # Flarum
 
-{% assign group_exp = group | remove: "/" | append: "-" %}
+{% assign group_exp = page.dir | remove: "/" | append: "-" %}
 
 {% assign group = site.github.public_repositories | where_exp: "i", "i.name contains group_exp" %}
 {% for i in group %}

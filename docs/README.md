@@ -1,6 +1,6 @@
 # zBox Development Platform
 
-{% assign repos = site.github.public_repositories | group_by_exp: "item", "item.name | split: '-' | first" %}
-{% for i in repos %}
+{% assign groups = site.github.public_repositories | where_exp: "i", "i.name contains '-'" | group_by_exp: "i", "i.name | split: '-' | first" %}
+{% for i in groups %}
   * [{{ i.name }}](/{{ i.name }}/)
 {% endfor %}

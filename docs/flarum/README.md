@@ -4,7 +4,7 @@
 
 {% assign group = site.github.public_repositories | where: 'topics', dir %}
 {% for i in group %}
-  {% assign name = i.name | remove: dir | remove: '-' %}
+  {% assign name = i.name | remove: dir | remove_first: '-' %}
   <span class="block">[{{ name }}]({{ name }})</span>
   <span class="block">{{ i.description }}</span>
   <span class="block">

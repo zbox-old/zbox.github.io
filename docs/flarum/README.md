@@ -11,4 +11,10 @@
     [<i class="fa-solid fa-link fa-fw"></i>]({{ i.homepage }})
   </span>
   <span class="block">{{ i.description }}</span>
+  <span class="block">
+    <i class="fa-solid fa-copyright"></i> `{{ i.license.spdx_id }}`
+    <i class="fa-solid fa-code-fork"></i> `{{ i.forks_count }}`
+    <i class="fa-solid fa-star"></i> `{{ i.stargazers_count }}`
+    <i class="fa-solid fa-eye"></i> `{{ i.watchers_count }}`
+  </span>
 {% endfor %}

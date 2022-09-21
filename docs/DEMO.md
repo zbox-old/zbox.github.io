@@ -31,6 +31,6 @@ console.log(animals);
 
 ## Repositories
 
-{% for repository in site.github.public_repositories %}
+{% for repository in site.github.public_repositories | where_exp: "item", "item.name contains 'xenforo'" %}
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}

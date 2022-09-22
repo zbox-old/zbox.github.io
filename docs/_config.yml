@@ -29,6 +29,8 @@ webmaster_verifications:
   google: ""
   yandex: ""
 
+remote_theme: zbox/jekyll-ui-pages
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

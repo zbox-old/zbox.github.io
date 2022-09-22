@@ -1,3 +1,7 @@
+---
+layout: catalog
+---
+
 # Flarum
 
 {% assign dir = page.dir | remove: '/' %}

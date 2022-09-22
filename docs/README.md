@@ -4,6 +4,6 @@
 
 <ul>
 {% for i in groups %}
-  <li>[{{ i.name }}](/{{ i.name }}/)</li>
+  <li><a href="/{{ i.name }}/">{{ i.name }}</a></li>
 {% endfor %}
 </ul>

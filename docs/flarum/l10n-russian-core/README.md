@@ -1,4 +1,6 @@
-# Flarum Russian Language Pack (UNOFFICIAL)
+---
+title: 'Flarum Russian Language Pack (UNOFFICIAL)'
+---
 
 {% include img.html title="Flarum Russian Language Pack" file="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Flag-map_of_Russia.svg/2560px-Flag-map_of_Russia.svg.png" %}
 

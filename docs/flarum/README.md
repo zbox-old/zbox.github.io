@@ -1,5 +1,5 @@
 ---
-layout: catalog
+layout: default
 ---
 
 # Flarum

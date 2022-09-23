@@ -5,7 +5,7 @@ title: 'zBox Development Platform'
 
 {% assign groups = site.github.public_repositories | where_exp: "i", "i.name contains '-'" | group_by_exp: "i", "i.name | split: '-' | first" %}
 
-<ul class="list-group list-group-flush">
+<ul class="list-group">
 {% for g in groups %}
   <li class="list-group-item"><a href="{{ g.name }}">{{ g.name }}</a></li>
 {% endfor %}

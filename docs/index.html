@@ -1,4 +1,5 @@
 ---
+layout: home
 title: 'zBox Development Platform'
 ---
 
@@ -6,6 +7,6 @@ title: 'zBox Development Platform'
 
 <ul>
 {% for i in groups %}
-  <li><a href="{{ i.name }}">{{ i.name }}</a></li>
+  <li><a href="{{ i.name }}">{{ i.owner.login }}/{{ i.name }}</a></li>
 {% endfor %}
 </ul>

@@ -7,7 +7,7 @@ title: 'zBox Development Platform'
 
 <ul>
 {% for i in groups %}
-  <li><a href="{{ i.name }}">{{ i.owner.login }}/{{ i.name }}</a></li>
+  <li><a href="{{ i.name }}">{{ i.items.owner.login }}/{{ i.name }}</a></li>
 {% endfor %}
 </ul>
 
